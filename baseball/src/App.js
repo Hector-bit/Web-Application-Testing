@@ -20,7 +20,7 @@
 
 import React, {useState} from "react";
 import "./App.css";
-// import BottomRow from "./BottomRow";
+import HitButton from './components/buttons/HitButton';
 
 function App() {
 
@@ -59,7 +59,7 @@ function App() {
           <button className="strikeButton" onClick={() => setStrikes(strikes + 1)}>Strike</button>
           <button className="ballButton" onClick={() => setBalls(balls + 1)}>Ball</button>
           <button className="foulButton" onClick={() => setBalls(balls + 1)}>Foul</button>
-          <button className="hitbutton" onClick={() => setBalls(balls + 1)}>Hit</button>
+          <button className="hitbutton" onClick={() => HitButton(setStrikes, setBalls)}>Hit</button>
         </div>
       </section>
     </div>
