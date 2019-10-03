@@ -6,6 +6,8 @@ const Strikes = props => {
 
     // const numOfStrikes = 0;
 
+    
+
     return (
         <div>
             <h2>STRIKES:</h2>

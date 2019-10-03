@@ -4,6 +4,8 @@ import { useState } from 'react';
 const Balls = props => {
     const [balls, setBalls] = useState(0);
 
+    console.log(balls);
+
     return (
         <div>
             <h2>BALLS:</h2>
