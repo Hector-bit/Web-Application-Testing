@@ -1,31 +1,11 @@
-// import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-// import Strikes from './components/Strikes';
-// import Balls from './components/Balls';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <h2>the baseball scores will be displayed right below this line of text</h2>
-//         <Strikes></Strikes>
-//         <Balls></Balls>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React, {useState} from "react";
 import "./App.css";
 import HitButton from './components/buttons/HitButton';
+import FoulButton from './components/buttons/FoulButton';
 
 function App() {
 
   const [balls, setBalls] = useState(0);
-  // const [awayScore, setAwayScore] = useState(0);
   const [strikes, setStrikes] = useState(0);
 
   if(strikes === 3){
@@ -58,7 +38,7 @@ function App() {
         <div className="homeButtons">
           <button className="strikeButton" onClick={() => setStrikes(strikes + 1)}>Strike</button>
           <button className="ballButton" onClick={() => setBalls(balls + 1)}>Ball</button>
-          <button className="foulButton" onClick={() => setBalls(balls + 1)}>Foul</button>
+          <button className="foulButton" onClick={() => FoulButton(setStrikes, strikes)}>Foul</button>
           <button className="hitbutton" onClick={() => HitButton(setStrikes, setBalls)}>Hit</button>
         </div>
       </section>
