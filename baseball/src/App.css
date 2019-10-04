@@ -1,0 +1,31 @@
+button {
+  margin: 2%;
+  padding: 2% 3%;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+}
+
+.home__score {
+  margin: 32% 35%;
+}
+
+.away__score {
+  margin: 32% 35%;
+}
+
+.scoreboard {
+  display: flex;
+  border: 2px solid black;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  margin: 5% 5% 0 0;
+}
+
+.home {
+  display: flex;
+  margin: 5% 5% 0 0;
+}
